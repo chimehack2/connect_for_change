@@ -8,7 +8,7 @@ class User < ActiveRecord::Base
   ADMINISTRATOR = 'administrator'
   MENTOR = 'mentor'
   MENTEE = 'mentee'
-  USER = 'users'
+  USER = 'user'
   ROLES = [ADMINISTRATOR, MENTOR, MENTEE, USER]
   validates_inclusion_of :role, in: ROLES
 
