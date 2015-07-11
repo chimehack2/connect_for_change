@@ -5,7 +5,7 @@ module GroupsHelper
     elsif current_user.mentee? && user_signed_in?
       'groups/main_mentee'
     else
-      'groups/main_user'
+      'groups/main_public'
     end
   end
 end

@@ -57,7 +57,7 @@ User.create(name: "TiYanna Long",
             role: "mentee")
 
 User.create(name: "Larry the Bird",
-            email: "twitterbird@example.com",
+            email: "larry@example.com",
             password: "password",
             birthday: "2006-03-21",
             telephone: "816-517-1305",
@@ -67,7 +67,7 @@ User.create(name: "Larry the Bird",
             role: "mentee")
 
 User.create(name: "Beyonce Knowles",
-            email: "linda@example.com",
+            email: "beyonce@example.com",
             password: "password",
             birthday: "1981-09-4",
             telephone: "816-517-1305",
