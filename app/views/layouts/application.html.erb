@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>Connect For Change</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag  'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 
@@ -10,31 +10,83 @@
   <meta property="og:description" content="Discovering tech-driven solutions to connect girls and women around the world"/>
   <meta property="og:image" content='<%= image_url "connect.jpg" %>'/>
 </head>
-<body>
+<body class="royal_preloader scrollreveal">
+  <div id="royal_preloader"></div>
 
-<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
-    <div class="navbar-header">
-        <a class="navbar-brand" href='/'>Connect For Change</a>
-    </div>
-    <div>
-        <ul class="nav navbar-nav">
-          <%= render nav_bar_partial%>
-        </ul>
-   </div>
-</nav>
+  <!-- Begin Boxed or Fullwidth Layout -->
+  <div id="bg-boxed">
+    <div class="boxed">
 
-<div class='container-fluid'>
-  <section class="notices">
-    <% if notice %>
-      <p class="alert-success"><%= notice %></p>
-    <% end %>
-    <% if alert %>
-      <p class="alert-danger"><%= alert %></p>
-    <% end %>
-  </section>
+      <!-- Begin Header -->
+      <header>
 
-  <%= yield %>
-</div>
+        <!-- Begin Navigation -->
+        <div class="navbar">
+          <div class="container container-header">
+            <div class="navbar-header">
+              <!-- Brand -->
+              <a href="index.html" class="navbar-brand">
+                <div class="css-logo"></div> <img src="img/logo.png" class="raleway-logo" alt="Raleway Responsive Parallax Bootstrap 3 Template">
+              </a>
+              <!-- Mobile Navigation -->
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div><!-- /navbar header -->
+
+            <!-- Main Navigation -->
+            <nav class="navbar-collapse collapse navHeaderCollapse" role="navigation">
+              <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown active">
+                  <a href="index.html" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="300" data-close-others="true">Home<span class="fa fa-angle-down dropdown-arrow"></span></a>
+                </li>
+                <%= render nav_bar_partial %>
+              </ul><!-- /navbar right -->
+            </nav><!-- /nav -->
+
+          </div><!-- /container header -->
+        </div><!-- /navbar -->
+        <!-- End Navigation -->
+
+      </header><!-- /header -->
+      <!-- End Header -->
+
+      <!-- Begin 3 Services -->
+      <div class="background-light-grey pt60 pb60 border-bottom">
+        <div class="container">
+          <div class="row">
+
+            <section class="notices">
+              <% if notice %>
+                <p class="alert-success"><%= notice %></p>
+              <% end %>
+              <% if alert %>
+                <p class="alert-danger"><%= alert %></p>
+              <% end %>
+            </section>
+
+            <%= yield %>
+
+          </div>
+        </div><!-- /container -->
+      </div><!-- /cta -->
+      <!-- End 3 Services -->
+
+
+
+      <!-- Begin Footer -->
+      <footer class="footer">
+        <div class="container">
+
+        </div><!-- /container -->
+      </footer><!-- /footer -->
+      <!-- End Footer -->
+
+    </div><!-- /boxed -->
+  </div><!-- /bg boxed-->
 
 </body>
 </html>
