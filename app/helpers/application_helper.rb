@@ -4,6 +4,8 @@ module ApplicationHelper
       'layouts/logged_in_mentor'
     elsif current_user && current_user.mentee? && user_signed_in?
       'layouts/logged_in_mentee'
+    elsif current_user && current_user.user? && user_signed_in?
+      'layouts/logged_in_user'
     else
       'layouts/guest_user_nav'
     end
