@@ -4,7 +4,7 @@
 <% @group.users.where.not(id: current_user).each do |user| %>
 
 <div class="col-sm-4">
-  <img class="img-circle img-responsive img-center" src="http://placehold.it/300x300" alt="">
+  <img class="img-circle img-responsive img-center" src="images/image<%=user.id%>.jpg" alt="">
   <h2><%= link_to user.name, user %></h2>
   <p><%=user.email%></p>
 </div>
