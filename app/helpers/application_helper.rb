@@ -32,7 +32,7 @@ module ApplicationHelper
     end
   end
   def landing_top_bar_partial
-    if request.env['PATH_INFO'] == '/'
+    if request.env['PATH_INFO'] == '/' and not user_signed_in?
       'layouts/landing_top_bar'
     else
       'layouts/blank'
