@@ -11,28 +11,28 @@ module ApplicationHelper
     end
   end
   def footer_partial
-    unless current_user && user_signed_in?
+    if request.env['PATH_INFO'] == '/'
       'layouts/footer'
     else
       'layouts/blank'
     end
   end
   def landing_accordion_partial
-    unless current_user && user_signed_in?
+    if request.env['PATH_INFO'] == '/'
       'layouts/landing_accordion'
     else
       'layouts/blank'
     end
   end
   def landing_carousel_partial
-    unless current_user && user_signed_in?
+    if request.env['PATH_INFO'] == '/'
       'layouts/landing_carousel'
     else
       'layouts/blank'
     end
   end
   def landing_top_bar_partial
-    unless current_user && user_signed_in?
+    if request.env['PATH_INFO'] == '/'
       'layouts/landing_top_bar'
     else
       'layouts/blank'
