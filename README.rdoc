@@ -1,28 +1,17 @@
-== README
+7 WOMEN. 6 MONTHS. 1 MISSION. CONNECT FOR CHANGE.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+PROBLEM STATEMENT: In many developing countries, girls and women end up in early marriages, drop out of school or become pregnant before 18. This jeopardizes their future and the nations. These women feel weak and powerless with no immediate role models to look up to. They believe it is impossible to dream big and end up in situation that prevent them from moving forward.
 
-Things you may want to cover:
+SOLUTION OVERVIEW: Our solution provides a platform to inspire, motivate and connect young women to local and international mentors. This will prevent issues with weakness, sexual assault and will promote justice and education.
 
-* Ruby version
+AUDIENCE: This application will target women 16 and above in developing countries who need a safe place to connect and a way to build real relationships to women leaders within the community.
 
-* System dependencies
+WHY IS THIS SOLUTION UNIQUE? This solution is unique because it will be based on solid user-friendly foundation in developing-country accessible technology (web/SMS/video chat) in order to build a community of women leaders in the real world (via identity verification, community spaces by partnerships with schools/companies, scheduling and program direction) .
 
-* Configuration
+HOW IT WORKS? 1) We carefully interview and select mentors who are leaders and professionals in the community.
 
-* Database creation
+2) Each mentor carefully interviews and selects their team of six women. Groups will meet virtually, through our platform and 3rd party communication tools, as well as locally to allow for a flexible group-directed experience.
 
-* Database initialization
+3) Each team decides on a specific project to pursue, communication channels to use and bi-weekly schedule to guide their progress.
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+4) Project updates are submitted every 2 weeks which will include attendance and project updates.
