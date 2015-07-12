@@ -11,7 +11,7 @@ module ApplicationHelper
     end
   end
   def footer_partial
-    if request.env['PATH_INFO'] == '/' and not user_signed_in?
+    if request.env['PATH_INFO'] == '/' or not user_signed_in?
       'layouts/footer'
     else
       'layouts/blank'
