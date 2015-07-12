@@ -76,14 +76,24 @@ User.create(name: "Beyonce Knowles",
             group_id: 1,
             role: "mentor")
 
-Group.create(name: "Chimehack2 Heros",
+Group.create(name: "Chimehack2 Heroes",
+             location: "94109",
+             attendance: 28)
+
+Group.create(name: "Ghana Girls",
+             location: "55555",
+             attendance: 25)
+
+Group.create(name: "Environment Expertz",
+             location: "94109",
+             attendance: 26)
+
+Group.create(name: "Hot Hackers",
              location: "94109")
 
-Group.create(name: "",
-             location: "94109")
-
-Group.create(name: "Chimehack2 Heros",
-             location: "94109")
+Group.create(name: "Seoul Sisters",
+             location: "94109",
+             attendance: 34)
 
 
 
