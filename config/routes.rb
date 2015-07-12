@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   resources :users
   resources :groups
   resources :projects
+  resources :events
   root to: "landing#index"
   get 'leaderboard' => 'groups#leaderboard'
 
