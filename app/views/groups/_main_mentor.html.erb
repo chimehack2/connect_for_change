@@ -12,15 +12,14 @@
 
 <div class="col-sm-4">
   <img class="img-circle img-responsive img-center" src="images/image<%=user.id%>.jpg" alt="">
-  <h2><%= link_to user.name, user %></h2>
-  <input type="text" class="form-control">
+  <h2><centre><%= link_to user.name, user %></centre></h2>
+  <input type="text" class="form-control" placeholder="Enter Message">
   <button class= "btn btn-info">Send</button>
 
   <p>Email: <%=user.email%></p>
   <p>Location: <%=user.location%></p>
-  <p>DOB: <%=user.birthday.strftime("%B %d, %Y")%></p>
-  <p>Travel Radius: <%=user.travel_distance%></p>
+  <p>Travel Radius: <%=user.travel_distance%></p><hr>
 
 </div>
-
 <%end%>
+
