@@ -20,13 +20,15 @@
       <!-- Begin Header -->
       <header>
 
+      <%= render landing_top_bar_partial %>
+
         <!-- Begin Navigation -->
         <div class="navbar">
           <div class="container container-header">
             <div class="navbar-header">
               <!-- Brand -->
               <a href="index.html" class="navbar-brand">
-                <div class="css-logo"></div> <img src="img/logo.png" class="raleway-logo" alt="Raleway Responsive Parallax Bootstrap 3 Template">
+                <div class="css-logo"></div> <%= image_tag "logo.png", class: "raleway-logo" %>
               </a>
               <!-- Mobile Navigation -->
               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
@@ -40,9 +42,6 @@
             <!-- Main Navigation -->
             <nav class="navbar-collapse collapse navHeaderCollapse" role="navigation">
               <ul class="nav navbar-nav navbar-right">
-                <li class="dropdown active">
-                  <a href="index.html" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="300" data-close-others="true">Home<span class="fa fa-angle-down dropdown-arrow"></span></a>
-                </li>
                 <%= render nav_bar_partial %>
               </ul><!-- /navbar right -->
             </nav><!-- /nav -->
@@ -53,6 +52,8 @@
 
       </header><!-- /header -->
       <!-- End Header -->
+
+      <%= render landing_carousel_partial %>
 
       <!-- Begin 3 Services -->
       <div class="background-light-grey pt60 pb60 border-bottom">
@@ -75,11 +76,13 @@
       </div><!-- /cta -->
       <!-- End 3 Services -->
 
-
+      <%= render landing_accordion_partial %>
 
       <!-- Begin Footer -->
       <footer class="footer">
         <div class="container">
+
+          <%= render footer_partial %>
 
         </div><!-- /container -->
       </footer><!-- /footer -->
