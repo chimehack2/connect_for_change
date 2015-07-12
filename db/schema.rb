@@ -22,8 +22,6 @@ ActiveRecord::Schema.define(version: 20150712090643) do
     t.datetime "created_at",          null: false
     t.datetime "updated_at",          null: false
     t.integer  "attendance"
-    t.string   "project"
-    t.string   "description"
     t.string   "project_name"
     t.string   "project_description"
   end
