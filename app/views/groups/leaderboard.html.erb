@@ -2,19 +2,20 @@
 <% @groups.each_with_index do |group, index| %>
 
 <div>
-  <h1>#<%=index + 1%> <%= link_to group.name, group %></h1>
-  <h3><%=group.attendance%> points </h3>
-  <h2><%=group.project_name%></h2>
-  <h3><%=group.project_description%></h3>
+  <h2>#<%=index + 1%> <span class="label label-success"><%=group.attendance%> points</span></h3>
+  <h3>Team: <%= link_to group.name, group %> </h3>
+  <h3>Project: <%=group.project_name%></h3>
+  <p><i><%=group.project_description%></i></p>
 </div>
     <%if index == 0 %>
       <%group.users.where.not(role: "mentor").each do |user|%>
         <div class="col-sm-4">
           <img src="images/image<%=user.id%>.jpg" alt="" height="100" width="100">
-          <h3><%= link_to user.name, user %></h3>
+          <h4><%= link_to user.name, user %></h4>
         </div>
       <%end%>
     </br>
     <%end%>
-</br>
+</br><hr>
 <%end%>
+
