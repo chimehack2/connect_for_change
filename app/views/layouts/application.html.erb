@@ -30,7 +30,7 @@
           <div class="container container-header">
             <div class="navbar-header">
               <!-- Brand -->
-              <a href="index.html" class="navbar-brand">
+              <a href="/" class="navbar-brand">
                 <div class="css-logo"></div> <%= image_tag "logo.png", class: "raleway-logo" %>
               </a>
               <!-- Mobile Navigation -->
@@ -72,13 +72,7 @@
               <% end %>
             </section>
 
-            <% unless request.env['PATH_INFO'] == '/' %>
-            <% end %>
-
             <%= yield %>
-
-            <% unless request.env['PATH_INFO'] == '/' %>
-            <% end %>
 
           </div>
         </div><!-- /container -->
