@@ -11,21 +11,21 @@ module ApplicationHelper
     end
   end
   def footer_partial
-    if request.env['PATH_INFO'] == '/'
+    if request.env['PATH_INFO'] == '/' and not user_signed_in?
       'layouts/footer'
     else
       'layouts/blank'
     end
   end
   def landing_accordion_partial
-    if request.env['PATH_INFO'] == '/'
+    if request.env['PATH_INFO'] == '/' and not user_signed_in?
       'layouts/landing_accordion'
     else
       'layouts/blank'
     end
   end
   def landing_carousel_partial
-    if request.env['PATH_INFO'] == '/'
+    if request.env['PATH_INFO'] == '/' and not user_signed_in?
       'layouts/landing_carousel'
     else
       'layouts/blank'
