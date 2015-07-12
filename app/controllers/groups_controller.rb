@@ -4,8 +4,4 @@ class GroupsController < ApplicationController
     @group = current_user.group
   end
 
-  def leaderboard
-    @groups = Group.order('attendance DESC')
-  end
-
 end

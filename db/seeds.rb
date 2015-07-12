@@ -78,33 +78,22 @@ User.create(name: "Beyonce Knowles",
 
 Group.create(name: "Chimehack2 Heroes",
              location: "94109",
-             attendance: 36,
-             project: "Connect For Change",
-             description: "Build web platform for connecting small groups of women to engage in self-directed projects.")
+             attendance: 28)
 
 Group.create(name: "Ghana Girls",
              location: "55555",
-             attendance: 25,
-             project: "Literacy Center Volunteering",
-             description: "We will pair with the local volunteer non-profit to provide much needed and consisent support for after school programs for young children.")
+             attendance: 25)
 
 Group.create(name: "Environment Expertz",
              location: "94109",
-             attendance: 26,
-             project: "Creek Crawling",
-             description: "We seek to provide water analysis at nearby watershed.")
+             attendance: 26)
 
 Group.create(name: "Hot Hackers",
-             location: "94109",
-             attendance: 19,
-             project: "Civic Data Hacking",
-             description: "Providing expertise on big data problems for our local government.")
+             location: "94109")
 
 Group.create(name: "Seoul Sisters",
              location: "94109",
-             attendance: 34,
-             project: "SEAsia Community Building",
-             description: "Assist brides from Southeast Asia in settling into their new home in Korea.")
+             attendance: 34)
 
 
 
