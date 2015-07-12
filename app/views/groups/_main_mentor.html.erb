@@ -1,26 +1,12 @@
-Manage your mentees!
+<h1><%=@group.name%></h1>
+<h3>Manage your mentees!</h3>
 
-<div class="panel panel-default">
-  <table class="table">
-    <tr>
-      <th>Name</th>
-      <th>Location</th>
-    </tr>
-    <tr>
-      <td><%=@group.name%></td>
-      <td><%=@group.location%></td>
-    </tr>
-  </table>
+<% @group.users.where.not(id: current_user).each do |user| %>
 
- <table class="table">
-    <tr>
-      <th>Members</th>
-    </tr>
-    <tr>
-  <% @group.users.each do |user| %>
-    <tr>
-      <td><%= link_to user.name, user %></td>
-      <td><%=user.email%></td>
-    </tr>
-  <%end%>
+<div class="col-sm-4">
+  <img class="img-circle img-responsive img-center" src="http://placehold.it/300x300" alt="">
+  <h2><%= link_to user.name, user %></h2>
+  <p><%=user.email%></p>
 </div>
+
+<%end%>
