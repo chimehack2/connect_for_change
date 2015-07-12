@@ -9,8 +9,9 @@
             <!-- Social Buttons -->
             <div class="col-sm-5 text-right topmenu-holder">
                 <ul class="topbar-list list-inline">
-                    <li><a data-toggle="modal" data-target="#login">Login</a></li>
-                    <li><a href="pages-forms-register-login.html">Register</a></li>
+                    <!-- <li><a data-toggle="modal" data-target="#login">Login</a></li> -->
+                    <li><%= link_to "Log In", new_user_session_path %></li>
+                    <li><%= link_to "Sign Up", new_user_registration_path %></li>
                     <li>
                         <a class="btn btn-social-icon btn-rw btn-primary btn-xs">
                             <i class="fa fa-twitter"></i>
