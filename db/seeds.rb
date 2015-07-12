@@ -79,6 +79,12 @@ User.create(name: "Beyonce Knowles",
 Group.create(name: "Chimehack2 Heros",
              location: "94109")
 
+Group.create(name: "",
+             location: "94109")
+
+Group.create(name: "Chimehack2 Heros",
+             location: "94109")
+
 
 
 
