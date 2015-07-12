@@ -70,13 +70,11 @@
             </section>
 
             <% unless request.env['PATH_INFO'] == '/' %>
-              <div class="app-content">
             <% end %>
 
             <%= yield %>
 
             <% unless request.env['PATH_INFO'] == '/' %>
-              </div>
             <% end %>
 
           </div>
